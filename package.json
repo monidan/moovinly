@@ -8,7 +8,7 @@
     "clean": "rm -rf build",
     "dev": "tsc",
     "build": "pnpm clean && rollup -c rollup.config.js",
-    "preview": "pnpm build && vite"
+    "preview": "vite"
   },
   "keywords": [
     "slider",
