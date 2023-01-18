@@ -1,12 +1,37 @@
 {
   "name": "moovinly",
+  "type": "module",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple JavaScript-based slider for web-sites.",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf build",
+    "dev": "tsc",
+    "build": "pnpm clean && rollup -c rollup.config.js",
+    "preview": "pnpm build && vite"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "slider",
+    "javascript",
+    "js",
+    "gallery",
+    "carousel",
+    "typescript",
+    "rollup",
+    "vite",
+    "moovinly"
+  ],
+  "engines": {
+    "pnpm": ">=7.5",
+    "node": ">=12"
+  },
+  "author": "Daniel Horokhov",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.0.0",
+    "rollup": "^3.10.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4",
+    "vite": "3"
+  }
 }
